@@ -28,3 +28,11 @@ Lambert has never done Java web development. Better to choose something familiar
 ## Why is it Perl?
 
 Because Lambert needed something quick to replace Java. Lambert chose his go-to language of Perl.
+
+## How do you run this
+
+* First run the [MySQL](mysql) server.
+* Next, the [Mojolicious](mojolicious) web service.
+* Finally, the [Nginx](nginx) proxy
+
+At the conclusion of this, you can attach a web browser to http://localhost:8088
