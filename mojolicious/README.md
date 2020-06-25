@@ -24,7 +24,7 @@ If you want to shell in, you may.
 
 While shelled in, you can use the mysql client.
 
-    mysql -u root -p
+    mysql -h hello_mysql -u root -p
 
 When you are done, you can stop the docker instance.
 

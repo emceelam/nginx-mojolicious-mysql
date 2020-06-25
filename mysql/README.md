@@ -30,6 +30,10 @@ If you want to shell into the MySQL docker
 
     docker exec --interactive --tty mysql-server /bin/sh
 
+While shelled in, you can use the mysql client
+
+    mysql -u root -p
+
 When you are done, you may stop the MySQL docker.
 
     docker container stop mysql-server
