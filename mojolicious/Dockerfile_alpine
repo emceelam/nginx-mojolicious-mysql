@@ -1,0 +1,20 @@
+FROM alpine:latest
+
+LABEL maintainer="Lambert Lum"
+LABEL description="Mojolicious version of Hello World"
+
+RUN apk add make wget curl g++ perl-dev perl-app-cpanminus  \
+  && apk add perl-mojolicious \
+  && apk add perl-dbd-mysql \
+  && apk add mariadb-connector-c \
+  && mkdir /home/hello_world
+
+RUN apk add mysql mysql-client
+
+WORKDIR /home/hello_world
+COPY files/ /home/hello_world
+
+CMD ["prefork"]
+ENTRYPOINT ["./myapp.pl"]
+
+EXPOSE 3000/tcp
