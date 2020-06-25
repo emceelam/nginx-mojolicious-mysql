@@ -4,10 +4,8 @@ LABEL maintainer="Lambert Lum"
 LABEL description="Mojolicious version of Hello World"
 
 RUN  yum install -y epel-release  perl-App-cpanminus mysql \
+  && yum install -y perl-DBD-MySQL perl-Mojolicious \
   && mkdir /home/hello_world
-
-RUN yum install -y perl-DBD-MySQL
-RUN yum install -y perl-Mojolicious
 
 WORKDIR /home/hello_world
 COPY files/myapp.pl /home/hello_world
