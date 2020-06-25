@@ -3,7 +3,7 @@
 
 ## Three dockers
 
-An Nginx proxy is fronting a Mojolicious web service, which in turn fronts a MySQL server. The Mojolicious and MySQL are inaccessible to the public. Only the Nginx is accessible to the outside world.
+An [Nginx](nginx) proxy is fronting a [Mojolicious](mojolicious) web service, which in turn fronts a [MySQL](mysql) server. The Mojolicious and MySQL are inaccessible to the public. Only the Nginx is accessible to the outside world.
 
 ## Docker network
 
